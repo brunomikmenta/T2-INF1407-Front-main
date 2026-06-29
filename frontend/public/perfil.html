@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILfVY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>MySongProfileApp</h1>
+    </header>
+
+    <main class="profile-page">
+        <aside class="profile-sidebar">
+            <div class="profile-sidebar-header">
+                <span class="profile-sidebar-label">Perfil</span>
+                <strong id="profile-username">Usuário</strong>
+            </div>
+
+            <a class="profile-nav-link" href="./index.html">Voltar para home</a>
+        </aside>
+
+        <section class="profile-content-area">
+            <div class="profile-switcher" role="tablist" aria-label="Opções do perfil">
+                <button id="btn-show-playlist" class="profile-switcher-button is-active" type="button">Editar playlist</button>
+                <button id="btn-show-edit" class="profile-switcher-button" type="button">Editar perfil</button>
+            </div>
+
+            <section id="profile-playlist-view" class="profile-panel">
+                <div class="profile-panel-header">
+                    <div>
+                        <h2>Sua playlist favorita</h2>
+                        <p id="playlist-summary">Visualize e gerencie suas músicas favoritas.</p>
+                    </div>
+                    <div class="profile-actions" id="playlist-actions"></div>
+                </div>
+
+                <div id="playlist-message" class="profile-message"></div>
+
+                <div id="playlist-empty-state" class="profile-empty-state is-hidden">
+                    <p>Nenhuma música adicionada ainda. <a class="profile-inline-link" href="./criaLista.html">Criar lista</a></p>
+                </div>
+
+                <div id="playlist-table-wrapper" class="playlist-table-wrapper is-hidden">
+                    <div class="playlist-table-header">
+                        <h3>Músicas cadastradas</h3>
+                        <p id="playlist-count"></p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped align-middle">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Título</th>
+                                    <th>Artista</th>
+                                    <th>Gênero</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="playlist-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profile-edit-view" class="profile-panel is-hidden">
+                <div class="profile-panel-header">
+                    <h2>Editar perfil</h2>
+                    <p>Atualize seus dados pessoais e troque a senha quando quiser.</p>
+                </div>
+
+                <form id="profile-form" class="profile-form">
+                    <div class="profile-form-grid">
+                        <label>
+                            Username
+                            <input id="profile-name" type="text" class="form-control" required>
+                        </label>
+
+                        <label>
+                            E-mail
+                            <input id="profile-email" type="email" class="form-control" required>
+                        </label>
+
+                        <label>
+                            Nome
+                            <input id="profile-first-name" type="text" class="form-control">
+                        </label>
+
+                        <label>
+                            Sobrenome
+                            <input id="profile-last-name" type="text" class="form-control">
+                        </label>
+
+                        <label>
+                            Gênero
+                            <select id="profile-gender" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                                <option value="O">Outro</option>
+                                <option value="N">Prefiro não dizer</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="profile-actions">
+                        <button type="submit" class="profile-save-button">Salvar alterações</button>
+                        <a class="profile-password-button" href="./esqueceuSenha.html">Quero trocar minha senha</a>
+                    </div>
+
+                    <div id="profile-message" class="profile-message"></div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="./js/toast.js"></script>
+    <script type="module" src="./js/perfil.js?v=5"></script>
+</body>
+</html>
+

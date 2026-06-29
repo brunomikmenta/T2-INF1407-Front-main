@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySongProfileApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <style>
+        .nova-senha-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .field-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .field-group label {
+            font-weight: 400;
+        }
+
+        .nova-senha-form .form-control {
+            width: 100%;
+        }
+
+        .nova-senha-form button[type="submit"] {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>MySongProfileApp</h1>
+            <h2>Nova Senha</h2>
+
+            <form id="formResetSenha" class="nova-senha-form">
+
+                <div class="field-group">
+                    <label for="novaSenha">Nova senha:</label>
+                    <input class="form-control" type="password" id="novaSenha" name="novaSenha" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="confirmarSenha">Confirmar nova senha:</label>
+                    <input class="form-control" type="password" id="confirmarSenha" name="confirmarSenha" required>
+                </div>
+
+                <button id="enviaNovaSenha" type="submit">Salvar nova senha</button>
+                <div id="message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./js/toast.js"></script>
+    <script type="module" src="./js/esqueceuSenhaReset.js"></script>
+
+</body>
+
+</html>
+

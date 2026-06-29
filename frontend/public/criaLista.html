@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Lista - MySongProfileApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILfVY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>MySongProfileApp</h1>
+    </header>
+
+    <nav id="leftbar">
+        <ul>
+            <li><a class="btn btn-primary" href="./index.html">Home</a></li>
+            <li><a class="btn btn-primary" href="./perfil.html">Perfil</a></li>
+            <li><a class="btn btn-primary" href="./editarPerfil.html">Editar perfil</a></li>
+            <li class="login-component">
+                <a class="btn btn-primary" href="./login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="profile-info-container">
+        <h1 id="page-title">Criar lista de músicas</h1>
+        <div id="create-list-message" class="profile-message"></div>
+
+        <form id="create-playlist-form">
+            <div id="song-slots"></div>
+
+            <div class="profile-actions">
+                <button type="submit" class="btn btn-primary">Salvar playlist</button>
+                <a class="btn btn-secondary" href="./perfil.html">Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="./js/toast.js"></script>
+    <script type="module" src="./js/criaLista.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySongProfileApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <style>
+        .cadastro-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .field-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .field-group label {
+            font-weight: 400;
+        }
+
+        .cadastro-form .form-control {
+            width: 100%;
+        }
+
+        .cadastro-form button[type="submit"] {
+            width: 100%;
+        }
+
+        .cadastro-link {
+            display: inline-block;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>MySongProfileApp</h1>
+            <h2>Cadastro de Usuário</h2>
+
+            <form id="cadastro-form" method="POST" class="cadastro-form">
+
+                <div class="field-group">
+                    <label for="username">Username:</label>
+                    <input class="form-control" type="text" id="username" name="username" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+
+                </div>
+
+                <div class="field-group">
+                    <label for="senha">Nova senha:</label>
+                    <input class="form-control" type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input class="form-control" type="password" id="confirmar-senha" name="confirmar-senha" required>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./js/toast.js"></script>
+    <script type="module" src="./js/cadastroUsuario.js"></script>
+
+</body>
+
+</html>
+
