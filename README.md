@@ -1,5 +1,9 @@
 # 🎵 MySongProfileApp
 
+# 👨‍💻 Dupla
+
+Projeto desenvolvido para a disciplina **INF1407 - Programação para Web**, por Bruno Miksucas Pimenta e Pedro Pereira Bittencourt.
+
 # 📖 Descrição do Projeto
 
 O **MySongProfileApp** é uma aplicação web desenvolvida para permitir que usuários criem e gerenciem uma playlist personalizada com suas músicas favoritas.
@@ -118,6 +122,9 @@ A página de perfil exibe:
 
 ### Criação da Playlist
 
+<img width="1906" height="909" alt="image" src="https://github.com/user-attachments/assets/e009c760-e2d4-41d4-ad08-312d5c674462" />
+
+
 O sistema permite criar uma playlist contendo até cinco músicas.
 
 Cada música contém:
@@ -128,6 +135,8 @@ Cada música contém:
 
 ### Edição de Música
 
+<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/f527db24-d2fe-4775-aee3-d82540e6db7b" />
+
 O usuário pode alterar informações de qualquer música presente em sua playlist:
 
 - Nome;
@@ -135,6 +144,8 @@ O usuário pode alterar informações de qualquer música presente em sua playli
 - Gênero.
 
 ### Remoção de Música
+
+<img width="1900" height="905" alt="image" src="https://github.com/user-attachments/assets/e4239e38-d32b-49de-bf4c-136b0c6f6537" />
 
 Também é possível:
 
@@ -251,8 +262,4 @@ Como comprovação da evolução do projeto, abaixo estão os registros dos comm
 
 <img width="1919" height="844" alt="image" src="https://github.com/user-attachments/assets/3ef68fb2-8fe2-4292-9463-5682863b0894" />
 
----
 
-# 👨‍💻 Autor
-
-Projeto desenvolvido para a disciplina **INF1407 - Programação para Web**, utilizando Django, Django REST Framework, HTML, CSS, Bootstrap e TypeScript.
