@@ -1,4 +1,5 @@
 MySongProfileApp
+
 Descrição do Projeto
 O MySongProfileApp é uma aplicação web desenvolvida para permitir que usuários criem e gerenciem uma playlist personalizada com suas músicas favoritas.
 A aplicação possui autenticação de usuários, gerenciamento de perfil e gerenciamento de playlists, permitindo que cada usuário mantenha sua própria lista de músicas associada à conta criada.
