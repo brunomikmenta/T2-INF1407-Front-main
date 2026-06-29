@@ -169,7 +169,7 @@ Caso um usuário tente acessar recursos protegidos sem estar autenticado, ele se
 - HTML5
 - CSS3
 - Bootstrap
-- TypeScript
+- TypeScript (o código javascript foi gerado a partir do comando 'npx tsc')
 
 ## Backend
 
