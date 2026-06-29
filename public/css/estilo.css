@@ -499,6 +499,27 @@ button:hover {
     background-color: #c6403c;
 }
 
+.profile-playlist-table th,
+.profile-playlist-table td {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+}
+
+.profile-playlist-table th:nth-child(2),
+.profile-playlist-table td:nth-child(2) {
+    min-width: 220px;
+}
+
+.profile-playlist-table th:nth-child(3),
+.profile-playlist-table td:nth-child(3) {
+    min-width: 180px;
+}
+
+.profile-playlist-table th:nth-child(4),
+.profile-playlist-table td:nth-child(4) {
+    min-width: 140px;
+}
+
 @media (max-width: 900px) {
     body {
         height: auto;
